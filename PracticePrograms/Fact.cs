@@ -17,8 +17,8 @@ namespace PracticePrograms
                 facto = facto * i ;
             }
             Console.WriteLine("Factorial number: " + facto);
-            
 
+            Console.ReadLine();
         }
     }
 }

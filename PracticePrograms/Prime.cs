@@ -6,27 +6,32 @@ using System.Threading.Tasks;
 
 namespace PracticePrograms
 {
-     class Prime
+    class Prime
     {
-        public int num;
-        public void Primep()
+        public void PrimeNum()
         {
-            int num=0;
-            Console.WriteLine("Enter number");
-            int p = num / 2;
-            for(int i=2; i<=p; i++)
+            Console.WriteLine("Enetr number");
+            int num = Convert.ToInt32(Console.ReadLine());
+            int count = 0;
+           for(int i=1; i<=num;i++)
             {
-                    if(num%i!=0)
-                     {
-                       Console.WriteLine("Not Prime Number");
-                     } 
-                    else
-                     {
-                    Console.WriteLine("Prime Number");
-                      } 
-                               
+                if(num%i==0)
+                {
+                    count = count + 1;
+                }
             }
-            Console.ReadLine();
+
+           if(count==2)
+            {
+                Console.WriteLine("Is a prime number");
+            }
+            else
+            {
+                Console.WriteLine("Not a prime number");
+            }
         }
-    }
+
+
+    }   
 }
+
